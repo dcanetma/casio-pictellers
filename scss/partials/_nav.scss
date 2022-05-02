@@ -1,0 +1,97 @@
+@import 'mixins';
+
+nav[role="navigation"] {
+	@include nobullets;
+	background:#000;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding:10px 0;
+  z-index:99;
+
+  &.fixed {
+    position:fixed;
+    top:0;
+    bottom:auto;
+  }
+
+	ul {
+    text-align:center;
+
+		li {
+			display:inline;
+      text-transform:uppercase;
+
+      a {
+        display:block;
+        float:left;
+        margin:0px 17px;
+        color:#6D6E71;
+        text-decoration:none;
+        font-weight:700;
+        line-height:30px;
+
+        &:hover, &.active {
+          color:#fff;
+        }
+
+        &.arrow {
+          width:33px;
+          height:30px;
+          background:url(../images/sprite.png) -72px 0px no-repeat;
+          text-indent:-999em;
+          overflow:hidden;
+
+          &.active {
+            background:url(../images/sprite.png) -107px 0px no-repeat;
+          }
+        }
+
+        &.social {
+          margin:0px 2px;
+          background:url(../images/sprite.png) left top no-repeat;
+          width:30px;
+          height:30px;
+          overflow:hidden;
+          text-indent:-999em;
+
+          &.social-fb {
+            background-position: -35px top;
+          }
+        }
+      }
+
+      &.active {
+        a {
+          color:#fff;
+        }
+      }
+		}
+	}
+
+}
+
+
+div#cam-nav {
+  position:fixed;
+  top:200px;
+  right:15px;
+  z-index:20;
+  display:none;
+
+  @include nobullets;
+  @include subnav;
+
+}
+
+section#faq {
+  aside {
+    position:absolute;
+    top:50px;
+    right:15px;
+    @include nobullets;
+    @include subnav;
+
+  }
+}

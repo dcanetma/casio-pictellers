@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Xavi Blanch -- frontend develover -- @xavi_b
+    Daniel Canet -- Scrum Master -- @dcanetma
+    Víctor Lavega -- Web Design -- @brain2001
+
+# THANKS
+
+    Exilimlab
+    Enrenow
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr, Twitter Bootstrap, jQuery UI
+    jQuery Stellar
+    jQuery Cookie
+    jQuery cookiecuttr.com
